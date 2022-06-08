@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html *,
+html *::before,
+html *::after {
+
+    box-sizing: inherit;
+
+}
+:root {
+    --dark-color: hsl(var(--hue), 100%, 9%);
+    --light-color: hsl(var(--hue), 95%, 98%);
+    --base: hsl(var(--hue), 95%, 50%);
+    --complimentary1: hsl(var(--hue-complimentary1), 95%, 50%);
+    --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
+  
+    --font-family: "Poppins", system-ui;
+  
+    --bg-gradient: linear-gradient(
+      to bottom,
+      hsl(var(--hue), 95%, 99%),
+      hsl(var(--hue), 95%, 84%)
+    );
+  }
+#main {
+  /* border: 1rem solid #000; */
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 24% 76%;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    position: inherit;
+    background: rgba(133, 141, 125, 0.126);
+    opacity: 80%;
+    /* border: 4px  solid #000; */
+    border-radius: 12px;
+}
+.header .log {
+    float: inline-end;
+    right: 0px;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px #ccc;
+    text-align: end;
+    position: absolute;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 160px;
+}
+
+.green_info {
+    padding: 0px;
+    margin: 0;
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    background-color: #27AE60;
+    border: 0 !important;
+    border-left: 4px solid #34495E !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+    text-decoration: none;
+}
+
+.green_info:active,
+.green_info:hover {
+    opacity: 1;
+    transition: opacity 250ms;
+    webkit-transition: opacity 250ms;
+    text-decoration: none;
+}
+
+.green_info {
+    transition: background-color 250ms;
+    webkit-transition: background-color 250ms;
+    opacity: 1;
+    transition: opacity 250ms;
+    webkit-transition: opacity 250ms;
+}
+
+.green_info .ctaText {
+    font-weight: bold;
+    color: #eaeaea;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.green_info .postTitle {
+    color: #141414;
+    text-decoration: underline !important;
+    font-size: 16px;
+}
+
+.green_info:hover .postTitle {
+    text-decoration: underline !important;
+}
+
+.acces_rapide{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+    min-height: 80vh;
+    position: relative;
+    border-radius: 4px solid rgba(115, 133, 159, 0.5);
+    border-bottom:4px solid rgba(115, 133, 159, 0.288) ;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 1rem 10px;
+}
+.acces_rapide_header span{
+    position: relative;
+    border: 1rem solid rgb(195, 0, 255);
+}
+.acces_rapide .carrousel_right{
+    
+        width: 100%;
+        /* height: 100vh; */
+        border-radius: 12px;
+        background: url("./assets/pexels-7.jpg") center/cover fixed;
+        animation: bg-changes 30s infinite ease-in forwards;
+        transition: all 0.10s ease-in;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: 2px 3px 2px 2px #73859f;
+     
+      
+    }
+    @keyframes bg-changes {
+       0% {
+        background-image: url("./assets/pexels-8.jpg");
+      }
+      33% {
+        background-image: url("./assets/pexels-9.jpg");
+      }
+    
+      66% {
+        background-image: url("./assets/pexels-10.jpg");
+      }
+    
+      /* 75% {
+        background-image: url("./assets/pexels-11.jpg");
+      }
+     */
+      100% {
+        background-image: url("./assets/pexels-12.jpg");
+      }
+    }
+
+    /* GALERIE START  */
+    .container{
+      
+      justify-content: center;
+      margin: 1rem 5px;
+      border-bottom: 3px solid #ccc;
+      border-radius: 12px;
+      box-shadow: inset (red 30%, #ccc 12%);
+    }
+    .container_illustra_1{
+      display: grid;
+      grid-template-columns: 60% 40%;
+      gap: 7px;
+      min-height: 60vh;
+      
+    }
+    .container_illustra_2{
+      display: grid;
+      grid-template-columns: 35% 65%;
+      gap: 7px;
+      min-height: 80vh ;
+    }
+    .container_illustra_3{
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 7px;
+      min-height: 90vh 
+    }
+    .container_illustra_4{
+      display: grid;
+      grid-template-columns: 60% 40%;
+      gap: 7px;
+      min-height: 100vh 
+    }
+    .container-fluid{
+      border: 3px solid rgb(251, 247, 247);
+      opacity: 80%;
+      cursor: pointer;
+      display: grid;
+      border-radius: 15px;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      font-size: 1.3rem;
+      /* height: 50vh; */
+    }
+    .illustra_1{
+      background: url('./assets/pexel-2.jpg') right/cover fixed;
+    }
+    .illustra_2{
+      background: url('./assets/pexels-1.jpg') center/cover fixed ;
+    }
+    .illustra_3{
+      background: url('./assets/pexels-13.jpg') center/cover fixed ;
+    }
+    .illustra_4{
+      background: url('./assets/pexels-16.jpg') center/cover fixed ;
+
+    }
+    .paragraph{
+      display: inline-block;
+      flex-wrap: wrap;
+      flex-direction : column;
+    }
+
+
+    .list li a{
+        color: #000000c9;
+        font-size: 2rem;
+        text-overflow: clip;
+        text-shadow:  1px 2px 1px #3a3939;
+        margin: 0 8px;
+    }
+    .list li a:hover{
+        border-bottom: 3px solid rgb(255, 94, 0);
+        box-shadow: 2px 3px 2px 1px rgb(rgba(255, 0, 0, 0.795), green, blue);
+        top: 2px;
+        transition: 1s all ease;
+        background: orange;
+        color: #222;
+    }
+
+    .directeur-space  {
+        /* border: 1rem solid red; */
+        margin: 1rem;
+        border-radius: 12px;
+        box-shadow: 2px 3px 2px 2px #73859f;
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+
+    .directeur-content_fluid{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        justify-content: space-around;
+        min-height: 50vh;
+        gap: 1rem;
+        margin: 2rem 10px;
+
+    }
+    .directeur-content_fluid .photo_directeur{
+        background: url("./assets/adje.jpeg") center/cover;
+        border-radius: 12px;
+        visibility: 100%;
+        opacity: 1000%;
+        box-shadow: 2px 3px 2px 2px #73859f;
+
+    }
+    .directeur-content_fluid .bio{
+        padding: 1rem;
+        font-size: 1.4rem;
+        text-align: right;
+        font-family: "Garamon" ,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+
+    }
+    .header_log{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+      overflow: hidden;
+    }
+
+    
+    .bio .links button{
+        height: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #76daff75;
+        border-radius: 4px;
+    }
+
+    .art2 .articleBody{
+        font-size: 2rem;
+    }
+    
+    .propos .offre_{
+        width: 100%;
+        /* height: 100vh; */
+        border-radius: 12px;
+        background: url("./assets/pexels-7.jpg") center/cover fixed;
+        animation: bg-change_offre 30s infinite ease-in forwards;
+        transition: all 0.10s ease-in;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        z-index: 1;
+    }
+       
+        @keyframes bg-change_offre {
+            0% {
+             background-image: url("./assets/pexels-15.jpg");
+           }
+           33% {
+             background-image: url("./assets/pexels-16.jpg");
+           }
+         
+           66% {
+             background-image: url("./assets/pexels-10.jpg");
+           }
+         
+           /* 75% {
+             background-image: url("./assets/pexels-11.jpg");
+           }
+          */
+           100% {
+             background-image: url("./assets/pexels-12.jpg");
+           }
+         }
+
+         .text-gradient {
+            background-color: rgba(255, 68, 0, 0.459);
+          }
+          .biggi{
+            font-size: 1.7rem;
+            margin: 8px 4px;
+            padding: 10px;
+            font-weight: 900;  
+            text-shadow: 2px 2px 3px rgb(0.255,23,54 );
+          }
+          .big{
+            border-bottom: 1.2rem solid rgba(136, 255, 0, 0.356);
+            font-size: 7rem;
+            border-right: 1.2rem solid rgba(255, 81, 0, 0.26) ;
+            border-radius: 50px;
+            perspective: 200px;
+            opacity: 80%;
+            text-overflow: unset;
+            text-shadow:  2px 3px 2px #ff3300;
+            width: 990px;
+          }
+          .actus{
+              display: grid;
+              grid-template-columns: 100%;
+              justify-content: center;
+              padding: 1rem;
+              margin: 2rem 20px;
+          }
+          .owl-carousel  .card{
+              min-height: 12vh;
+              opacity: 90%;
+              visibility: visible;
+              padding: 20px;
+              margin: 14px;
+              display: grid;
+              grid-template-columns: 30% 70%;
+              justify-content: space-between;
+              border-radius: 12px;
+            }
+            .card .card-img-top{
+              background: #6d889256;
+              height: 230px;
+              width: 100%;
+                border-radius: 12px;
+          }
+          .card-img-top .img-article{
+              border-radius: 12px;
+          }
+          .card-img-top:hover{
+              top: 2px;
+              position: relative;
+              transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+              border: 3px solid #ccc;
+              box-shadow: 2px 3px 2px 1px cadetblue;
+          }
+
+
+/* footer */
+/*
+  Player Skin Designer for Video.js
+  http://videojs.com
+
+  To customize the player skin edit 
+  the CSS below. Click "details" 
+  below to add comments or questions.
+  This file uses some SCSS. Learn more  
+  at http://sass-lang.com/guide)
+
+  This designer can be linked to at:
+  https://codepen.io/heff/pen/EarCt/left/?editors=010
+*/
+.video-js {
+    /* The base font size controls the size of everything, not just text.
+       All dimensions use em-based sizes so that the scale along with the font size.
+       Try increasing it to 15px and see what happens. */
+    font-size: 10px;
+    /* The main font color changes the ICON COLORS as well as the text */
+    color: #fff;
+  }
+  
+  /* The "Big Play Button" is the play button that shows before the video plays.
+     To center it set the align values to center and middle. The typical location
+     of the button is the center, but there is trend towards moving it to a corner
+     where it gets out of the way of valuable content in the poster image.*/
+  .vjs-default-skin .vjs-big-play-button {
+    /* The font size is what makes the big play button...big. 
+       All width/height values use ems, which are a multiple of the font size.
+       If the .video-js font-size is 10px, then 3em equals 30px.*/
+    font-size: 3em;
+    /* We're using SCSS vars here because the values are used in multiple places.
+       Now that font size is set, the following em values will be a multiple of the
+       new font size. If the font-size is 3em (30px), then setting any of
+       the following values to 3em would equal 30px. 3 * font-size. */
+    /* 1.5em = 45px default */
+    line-height: 1.5em;
+    height: 1.5em;
+    width: 3em;
+    /* 0.06666em = 2px default */
+    border: 0.06666em solid #fff;
+    /* 0.3em = 9px default */
+    border-radius: 0.3em;
+    /* Align top left. 0.5em = 15px default */
+    left: 0.5em;
+    top: 0.5em;
+  }
+  
+  /* The default color of control backgrounds is mostly black but with a little
+     bit of blue so it can still be seen on all-black video frames, which are common. */
+  .video-js .vjs-control-bar,
+  .video-js .vjs-big-play-button,
+  .video-js .vjs-menu-button .vjs-menu-content {
+    /* IE8 - has no alpha support */
+    background-color: #2B333F;
+    /* Opacity: 1.0 = 100%, 0.0 = 0% */
+    background-color: rgba(43, 51, 63, 0.7);
+  }
+  
+  /* Slider - used for Volume bar and Progress bar */
+  .video-js .vjs-slider {
+    background-color: #73859f;
+    background-color: rgba(115, 133, 159, 0.5);
+  }
+  
+  /* The slider bar color is used for the progress bar and the volume bar
+     (the first two can be removed after a fix that's coming) */
+  .video-js .vjs-volume-level,
+  .video-js .vjs-play-progress,
+  .video-js .vjs-slider-bar {
+    background: #fff;
+  }
+  
+  /* The main progress bar also has a bar that shows how much has been loaded. */
+  .video-js .vjs-load-progress {
+    /* For IE8 we'll lighten the color */
+    background: #bfc7d3;
+    /* Otherwise we'll rely on stacked opacities */
+    background: rgba(115, 133, 159, 0.5);
+  }
+  
+  /* The load progress bar also has internal divs that represent
+     smaller disconnected loaded time ranges */
+  .video-js .vjs-load-progress div {
+    /* For IE8 we'll lighten the color */
+    background: white;
+    /* Otherwise we'll rely on stacked opacities */
+    background: rgba(115, 133, 159, 0.75);
+  }
+  #instructions { max-width: 90vw;height: 60vh; text-align: center; margin: 30px auto; }
+
+  
+  /* Show the controls (hidden at the start by default) */
+  .video-js .vjs-control-bar { 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  /* Make the demo a little prettier */
+  footer{
+  border-top: 2px solid #ccc;
+  width: 100%;
+  min-height: 70vh;
+  }
+  .footer {
+    margin-top: 20px;
+    background: #222;
+    text-align: center; 
+    color: #aaa;
+    width: 100%;
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: radial-gradient(#333, hsl(200,30%,6%) );
+  }
+  .footer video{
+      min-width: 700px;
+      width: 60vw;
+      min-height: 60vh;
+
+  }
+
+  .footer-list a, .footer-list a:hover, .footer-list a:visited { color: #76DAFF; }
